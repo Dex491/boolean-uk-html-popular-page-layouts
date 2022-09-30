@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+}
+.container {
+  display: grid;
+  grid-template: 
+  "navBar navBar navBar navBar" 1fr
+  "Left Main Settings rightNav" 20fr /
+  3fr 9fr 3fr 1fr;
+}
+.navBar {
+  grid-area: navBar;
+  background: rgb(9, 236, 104);
+}
+.Left {
+  grid-area: Left;
+  background: rgb(255, 255, 255);
+}
+.Main {
+  grid-area: Main;
+  background: rgb(255, 0, 0);
+}
+.Settings {
+  grid-area: Settings;
+  background: rgb(25, 0, 255);
+}
+.rightNav {
+  grid-area: rightNav;
+  background: rgb(219, 22, 193);
+}
