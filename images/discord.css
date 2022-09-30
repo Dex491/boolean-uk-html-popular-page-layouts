@@ -1,0 +1,22 @@
+.container{ display: grid;
+    grid-template:"left-bar main right-bar far-right" 100%/
+    1fr 3fr 10fr 3fr;
+}
+
+.left-bar{
+    grid-area: left-bar;
+    background-color: aqua;
+}
+
+.main{
+    grid-area: main;
+    background-color: blue;
+}
+.right-bar{
+    grid-area: right-bar;
+    background-color: brown;
+}
+.far-right{
+    grid-area:far-right;
+    background-color: coral;
+}
