@@ -3,35 +3,47 @@
 }
 .container{
     display: grid;
-    grid-template:"left-bar main right-bar far-right" 100%/
+    grid-template:"server-list chat-list main-inbox members-list" 100%/
     60px 200px 1fr 200px;
     height: 1000px;
 }
 
-.left-bar{
-    grid-area: left-bar;
+.server-list{
+    grid-area: server-list;
     background-color: aqua;
 }
 
-.main{
-    grid-area: main;
+.chat-list{
+    grid-area: chat-list;
     background-color: blue;
 }
-.right-bar{
-    grid-area: right-bar;
+.main-inbox{
+    grid-area: main-inbox;
     background-color: brown;
 }
-.far-right{
-    grid-area:far-right;
+.members-list{
+    grid-area: members-list;
     background-color: coral;
 }
 
 @media screen and (max-width: 800px) {
     .container{
         display: grid;
-        grid-template:"left-bar main right-bar far-right" 100%/
+        grid-template:"server-list chat-list main-inbox members-list" 100%/
         60px 200px 1fr 200px;
         height: 1000px;
     }
     
+}
+
+@media screen and (max-width: 500px) {
+    .container{
+        display: grid;
+        grid-template:"server-list chat-list members-list" 100%/
+        60px 200px 200px;
+        height: 1000px;
+    }
+    .main-inbox {
+        display: none;
+    }
 }

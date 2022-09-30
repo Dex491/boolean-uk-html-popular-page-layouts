@@ -4,35 +4,37 @@
   grid-template:
     "navBar navBar navBar" 1fr
     "left-side main right-side" 20fr /
-    1fr 5fr 2fr;
+    200px 1fr 200px;
 }
 
 .navBar {
   grid-area: navBar;
   background: #000;
-
 }
 .left-side {
   margin: 10px;
   grid-area: left-side;
   background: rgb(68, 255, 10);
+  border-radius: 10px;
 }
 .main {
   margin: 10px;
   grid-area: main;
   background: rgb(13, 34, 221);
+  border-radius: 10px;
 }
 .right-side {
   margin: 10px;
   grid-area: right-side;
   background: rgb(185, 114, 114);
+  border-radius: 10px;
 }
 *{
   margin: 0px;
   
 }
 
-@media screen and (max-width:300px) {
+@media screen and (max-width:600px) {
   .container{ 
     height: 1000px;
     display: grid;
@@ -40,14 +42,10 @@
       "navBar" 1fr
       "left-side" 100px
       "main" 20fr/
-       250px;
-       
-       
+       100%
+    /* width: 100%;    */
   }
   .right-side {
-    margin: 10px;
-    grid-area: right-side;
-    background: rgb(185, 114, 114);
     display: none;
   }
 }
