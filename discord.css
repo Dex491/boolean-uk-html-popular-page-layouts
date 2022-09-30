@@ -1,6 +1,11 @@
-.container{ display: grid;
+* {
+    margin: 0;
+}
+.container{
+    display: grid;
     grid-template:"left-bar main right-bar far-right" 100%/
-    1fr 3fr 10fr 3fr;
+    60px 200px 1fr 200px;
+    height: 1000px;
 }
 
 .left-bar{
@@ -19,4 +24,14 @@
 .far-right{
     grid-area:far-right;
     background-color: coral;
+}
+
+@media screen and (max-width: 800px) {
+    .container{
+        display: grid;
+        grid-template:"left-bar main right-bar far-right" 100%/
+        60px 200px 1fr 200px;
+        height: 1000px;
+    }
+    
 }
