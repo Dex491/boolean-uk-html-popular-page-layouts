@@ -31,3 +31,17 @@
   margin: 0px;
   
 }
+
+@media screen (max-width:800px) {
+  .container{ 
+    height: 1000px;
+    display: grid;
+    grid-template:
+      "navBar" 1fr
+      "left-side" 100px
+      "main" 20fr/
+       100px;
+       display: none;
+      
+  }
+}
